@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+h1{
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px;
+}
+nav{
+    background-color:rgb(219, 186, 141);
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+ nav ul li a{
+    font-size: 20px;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: .4s;
+}
+ul li a:hover{
+    background-color: rgb(190, 102, 102);
+}
+nav ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 255px;
+    top: 150%;
+    left: 0;
+    background-color: rgb(50, 58, 56);
+    transition: .3s;
+}
+nav ul li:hover ul{
+    top: 100%;
+     opacity: 1;
+     visibility: visible;   
+}
+nav ul li ul li{
+    display: block;
+}
+nav ul li ul li a{
+    display: block;
+
+}
+p{
+    font-size: 20px;
+    color: aliceblue;
+    background-color: rgb(92, 46, 46);
+    text-align: justify;
+    text-align-last: center;
+    line-height: 2.5;
+    text-transform: capitalize;
+}
+p::first-letter{
+    font-size: 42px;
+    color: rgb(196, 48, 67);
+}
